@@ -451,7 +451,7 @@ div.logo-container h2 a{
 
 h2.ant-typography{
   font-family: 'Josefin Sans' !important;
-  color: #2e1043 !important;
+  color: #3a095b !important;
 }
 
 .ant-statistic-title{
@@ -470,7 +470,7 @@ h2.ant-typography{
 h2.home-title{
   font-family: 'Josefin Sans' !important;
   font-weight: 600 !important;
-  color: #251132 !important;
+  color: #2c0d41 !important;
 }
 
 .ant-statistic-content-value {
@@ -528,7 +528,7 @@ span.ant-typography{
   display: flex;
 }
 .live-loader span {
-  background-color: #2e1043;
+  background-color: #340c52;
   border-radius: 4px;
   width: 5px;
   height: 3px;
