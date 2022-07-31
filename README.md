@@ -1,5 +1,7 @@
 # Cryptosense
 
+An all in one application for tracking everything related to crypto currency and view any related info all at one place.
+
 </br>
 
 ## View Live
@@ -18,6 +20,7 @@
 - #### Coinranking API
 - #### Bing News API
 
+</br>
 
 ## Features
 
