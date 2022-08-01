@@ -34,6 +34,11 @@ An all in one application for tracking everything related to crypto currency and
 
 </br>
 
+## Architecture
+
+![Blank document](https://user-images.githubusercontent.com/89788120/182190911-02bfecfd-6736-4347-9b79-99c4ec43a9d7.png)
+
+
 ## Additional Details
 
 - [x]  Redux used to store, persist and provide state of api data and services globally.
