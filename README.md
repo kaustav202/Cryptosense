@@ -14,11 +14,10 @@ An all in one application for tracking everything related to crypto currency and
 ## Tech Stack
 
 - #### Reactjs
-- #### Redux
+- #### Redux Toolkit
 - #### React Router
 - #### Axios
-- #### Coinranking API
-- #### Bing News API
+- #### Chart js
 
 </br>
 
