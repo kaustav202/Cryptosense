@@ -35,10 +35,11 @@ An all in one application for tracking everything related to crypto currency and
 
 </br>
 
-## Features
+## Additional Details
 
 - [x]  Redux used to store, persist and provide state of api data and services globally
 - [x]  React Router used to render different components and implement routing without navigating to different page.
 - [x]  Redux toolkit used to make API calls and create api services to be used in different components
 - [x]  Fully responsive design on all devices also adaptive components based on screen size
 - [x]  Continuos Deployment of master branch and live preview of other branches with vercel
+- [x]  Chart js library's line chart component to dynamically plot crypto currency prices
