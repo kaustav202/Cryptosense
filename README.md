@@ -39,6 +39,44 @@ An all in one application for tracking everything related to crypto currency and
 ![Blank document](https://user-images.githubusercontent.com/89788120/182190911-02bfecfd-6736-4347-9b79-99c4ec43a9d7.png)
 
 
+## Services
+
+The following services are created with the help of redux and redux-toolkit for direct, instantaneous access of dynamic and asynchronous operations and data, which allow the endpoints to be passed to parent as objects and it can just be destructured and called to fetch the response.
+
+API : coinrankingapi
+
+- **useGetCryptosQuery** </br>
+List constaing general data about each cryptocurrencies with limit option to cap the number of crypto currencies fetched.</br></br>
+    getCryptos: builder.query ({</br>
+&nbsp;&nbsp;&nbsp;&nbsp; query: (count) => createRequest(`/coins?limit=${count}`)</br>
+        })</br>
+ 
+    
+- **useGetCryptoDetailsQuery** </br>
+Takes the coin id as parameter or query string in  the request url, and returns detailed info about that specific cryptocurrency.</br></br>
+    getCryptoDetails:builder.query ({</br>
+&nbsp;&nbsp;&nbsp;&nbsp; query: (coinId) => createRequest(`/coin/${coinId}`)</br>
+        })</br>
+    
+- **useGetCryptoHistoryQuery** </br>
+Object reprenting the time series mapping of any particular cryptocurrency trading price specified by the passed id and a time string.</br></br>
+    getCryptoHistory: builder.query ({</br>
+&nbsp;&nbsp;&nbsp;&nbsp; query: ({ coinId, timeperiod }) => createRequest(`coin/${coinId}/history?timePeriod=${timeperiod}`)</br>
+        })</br>
+        
+</br>
+
+API : bing-news-search
+
+- **useGetCryptoNewsQuery** </br>
+Takes a keyword matched with cryptocurrency name and gets data of latest news aricles related to it, upto the total limit.</br></br>
+ getCryptoNews: builder.query ({</br>
+&nbsp;&nbsp;&nbsp;&nbsp; query: ({newsCategory,count}) => createRequest(`/news/search?q=${newsCategory}&count=${count}`)</br>
+      })</br>
+
+
+</br>
+
 ## Additional Details
 
 - [x]  Redux used to store, persist and provide state of api data and services globally.
