@@ -41,38 +41,52 @@ An all in one application for tracking everything related to crypto currency and
 
 ## Services
 
-The following services are created with the help of redux and redux-toolkit for direct, instantaneous access of dynamic and asynchronous operations and data, which allow the endpoints to be passed to parent as objects and it can just be destructured and called to fetch the response.
+The following services are created with the help of redux and redux-toolkit for persistence and direct access of dynamic operations and data related to API requests, which allow the endpoints to be passed as objects which can then be destructured and called to get the response data by any component in the application.
 
-API : coinrankingapi
+### &nbsp;&nbsp; *API : coinrankingapi*
+
+</br>
 
 - **useGetCryptosQuery** </br>
-List constaing general data about each cryptocurrencies with limit option to cap the number of crypto currencies fetched.</br></br>
-    getCryptos: builder.query ({</br>
-&nbsp;&nbsp;&nbsp;&nbsp; query: (count) => createRequest(`/coins?limit=${count}`)</br>
-        })</br>
+List constaing general data about each cryptocurrencies with limit option to cap the number of crypto currencies fetched.
+
+```javascript
+    getCryptos: builder.query ({
+             query: (count) => createRequest(`/coins?limit=${count}`)
+        })
+```
  
     
 - **useGetCryptoDetailsQuery** </br>
-Takes the coin id as parameter or query string in  the request url, and returns detailed info about that specific cryptocurrency.</br></br>
-    getCryptoDetails:builder.query ({</br>
-&nbsp;&nbsp;&nbsp;&nbsp; query: (coinId) => createRequest(`/coin/${coinId}`)</br>
-        })</br>
+Takes the coin id as parameter or query string in  the request url, and returns detailed info about that specific cryptocurrency.
+
+```javascript
+    getCryptoDetails:builder.query ({
+             query: (coinId) => createRequest(`/coin/${coinId}`)
+        })
+```
     
 - **useGetCryptoHistoryQuery** </br>
-Object reprenting the time series mapping of any particular cryptocurrency trading price specified by the passed id and a time string.</br></br>
-    getCryptoHistory: builder.query ({</br>
-&nbsp;&nbsp;&nbsp;&nbsp; query: ({ coinId, timeperiod }) => createRequest(`coin/${coinId}/history?timePeriod=${timeperiod}`)</br>
-        })</br>
+Object reprenting the time series mapping of any particular cryptocurrency trading price specified by the passed id and a time string.
+
+```javascript
+    getCryptoHistory: builder.query ({
+            query: ({ coinId, timeperiod }) => createRequest(`coin/${coinId}/history?timePeriod=${timeperiod}`)
+        })
+```
         
+### &nbsp;&nbsp; *API : bing-news-search*
+
 </br>
 
-API : bing-news-search
-
 - **useGetCryptoNewsQuery** </br>
-Takes a keyword matched with cryptocurrency name and gets data of latest news aricles related to it, upto the total limit.</br></br>
- getCryptoNews: builder.query ({</br>
-&nbsp;&nbsp;&nbsp;&nbsp; query: ({newsCategory,count}) => createRequest(`/news/search?q=${newsCategory}&count=${count}`)</br>
-      })</br>
+Takes a keyword matched with cryptocurrency name and gets data of latest news aricles related to it, upto the total limit.
+
+```javascript
+ getCryptoNews: builder.query ({
+           query: ({newsCategory,count}) => createRequest(`/news/search?q=${newsCategory}&count=${count}`)
+      })
+```
 
 
 </br>
