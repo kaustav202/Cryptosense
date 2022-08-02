@@ -71,8 +71,8 @@ Object reprenting the time series mapping of any particular cryptocurrency tradi
 
 ```javascript
     getCryptoHistory: builder.query ({
-            query: ({ coinId, timeperiod }) => createRequest(`coin/${coinId}/history?timePeriod=${timeperiod}`)
-        })
+       query: ({ coinId, timeperiod }) => createRequest(`coin/${coinId}/history?timePeriod=${timeperiod}`)
+      })
 ```
         
 ### &nbsp;&nbsp; *API : bing-news-search*
