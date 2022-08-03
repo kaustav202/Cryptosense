@@ -20,12 +20,12 @@ An all in one application for tracking everything related to crypto currency and
 
 ## Tech Stack
 
-- #### React js
-- #### Redux Toolkit
-- #### React Router
-- #### Chart js
-- #### Ant Design
-- #### Axios
+- ### React js
+- ### Redux Toolkit
+- ### React Router
+- ### Chart js
+- ### Ant Design
+- ### Axios
 
 </br>
 
@@ -37,7 +37,7 @@ An all in one application for tracking everything related to crypto currency and
 
 ## Architecture
 
-![Blank document](https://user-images.githubusercontent.com/89788120/182190911-02bfecfd-6736-4347-9b79-99c4ec43a9d7.png)
+![Cryptosense_Architecture](https://user-images.githubusercontent.com/89788120/182625207-c28e58a0-ceda-4fc0-9c16-d5244f4f07b8.png)
 
 
 ## Services
