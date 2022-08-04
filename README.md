@@ -31,12 +31,15 @@ An all in one application for tracking everything related to crypto currency and
 
 ## Project Structure
 
-![Cryptosense_Project_Structure](https://user-images.githubusercontent.com/89788120/182618243-c945a490-7ead-4e41-b554-e27b8fd2f828.png)
-
-
 </br>
 
+<img width='90%' src='https://user-images.githubusercontent.com/89788120/182618243-c945a490-7ead-4e41-b554-e27b8fd2f828.png'/>
+
+
+
 ## Front-End Architecture
+
+</br>
 
 ![Cryptosense_Architecture](https://user-images.githubusercontent.com/89788120/182631575-f0b14e3b-652e-4c91-a164-b9e61ba46760.png)
 
