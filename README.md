@@ -31,6 +31,8 @@ An all in one application for tracking everything related to crypto currency and
 
 ## Project Structure
 
+The project is structured following seperation of concerns on each level, broadly comprising of and divided into three main parts. The store is responsible for storing states and data while also providing access globally. The components section contains all the application modules which pertain to the application's UI including both representational and intelligent modules. The services section is for handling communication with 3rd party services, consuming APIs and ensuring the response is stored properly and accessible in a consistent manner.
+
 </br>
 
 <img width='90%' src='https://user-images.githubusercontent.com/89788120/182618243-c945a490-7ead-4e41-b554-e27b8fd2f828.png'/>
