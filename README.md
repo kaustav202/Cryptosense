@@ -99,6 +99,20 @@ Takes a keyword matched with cryptocurrency name and gets data of latest news ar
 
 </br>
 
+## Store
+
+The store module in app directory serves as the application's state container and is responsible for storing and maintaining the two services' states. This allows the api services to be managed consistently and predictably.
+
+- CryptoApi
+- CryptoNewsApi
+
+```javascript
+ reducer: {
+            [CryptoApi.reducerPath]: CryptoApi.reducer,
+            [CryptoNewsApi.reducerPath]: CryptoNewsApi.reducer,
+        }
+```
+
 ## Additional Details
 
 - [x]  Redux used to store, persist and provide state of api data and services globally.
